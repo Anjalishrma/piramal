@@ -217,6 +217,15 @@ background: #E02B19
     }
 }
 @media (max-width: 991px){
+    .navbar-expand-lg .navbar-nav .nav-link{padding: 5px 10px;}
+    .navbar-expand-lg .navbar-nav .nav-item{padding: 5px 0;border-bottom: 1px solid #ddd;}
+    .navbar-text a .download{opacity: 1;}
+    .navbar-text a img {
+        height: 20px;
+        width: 15px;
+    }
+    .navbar-text a{display: inline-block;
+        padding: 5px;}
     .navbar-toggler{border: 0px; padding: 0px;}
     .navbar{left: 0%; right: 0%;position: relative;}
     
