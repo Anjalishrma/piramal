@@ -1,5 +1,6 @@
 .navbar .navbar-brand{padding-left: 50px;}
 .navbar .navbar-brand img{width: 170px;}
+body{overflow-x: hidden;}
 .navbar{background-color: #fff;padding: 0px;position: absolute;top: 0;left: 6%;right: 6%;z-index: 1;}
 .navbar-expand-lg .navbar-nav li:last-child .nav-link::after{content: unset;}
 .navbar-text a img{height: 30px;width: 22px;}
@@ -90,7 +91,7 @@ section{padding: 70px 0px;}
   .hero__right {
     position: absolute;
     right: 20px;
-    heigth: 100%;
+    /* heigth: 100%; */
     padding-left: 20px;
   }
   .item__cost{height: 40px;
@@ -117,7 +118,7 @@ transition: all 0.4s ease-out;
 font-size: 30px;
   }
   .hero__item:nth-child(1){background: #F5C1AC;}
-  .hero__item:nth-child(2){background: #B9E1EB;left: -350px;}
+  .hero__item:nth-child(2){background: #B9E1EB;left: -350px;position: relative;}
   .hero__item:nth-child(3){background: #CCC2D6;}
   .hero__item:last-child {
     margin: 0;
@@ -164,6 +165,13 @@ background: #E02B19
     .environment .swiper-slide .bg h5{font-size: 16px;}
     .environment h3 br{display: none;}
     .swiper-button-prevpiramal_glance::after, .swiper-button-prevfunctional_highlight::after, .swiper-button-prevoperational_highlight::after{background-position-x: left;}
+    .hero-wrap{height: 100%;}
+    .col {width: 100%;}
+    .hero__item{height: 300px;width: 300px;font-size: 22px;}
+    .hero-wrap{padding: 0px;}
+    .item__name, .hero__item .item_hover_content{font-size: 20px;padding: 10px;}
+    .hero__item:nth-child(2){left: 0px;}
+    .hero__right{right: 0px;padding-left: 0px;display: flex;flex-direction: column;align-items: center;}
 }
 @media (min-width: 768px) and (max-width: 991px){
     .swiper-button-nextpiramal_glance::after, .swiper-button-nextfunctional_highlight::after, .swiper-button-nextoperational_highlight::after{ right: -40px; position: absolute;background-size: 55px;}
@@ -187,7 +195,27 @@ background: #E02B19
     .img_pos{right: -30px;}
     .navbar .navbar-brand img {width: 140px;}
     .navbar .navbar-brand {padding-left: 0px;}
+    .hero__right{right: 0px;}
+    .hero__item{height: 350px; width: 350px;}
 } 
+@media (min-width: 992px) and (max-width: 1240px){
+    .text_padd {
+        padding: 0px;
+    }
+    .navbar-expand-lg .navbar-collapse{margin-left: 0px !important;}
+    .navbar .navbar-brand {
+        padding-left: 0px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{padding: 5px 15px;}
+    .navbar-text a img {
+        height: 22px;
+        width: 15px;
+    }
+    .navbar-text a{display: flex;}
+    .navbar .navbar-brand img {
+        width: 130px;
+    }
+}
 @media (max-width: 991px){
     .navbar-toggler{border: 0px; padding: 0px;}
     .navbar{left: 0%; right: 0%;position: relative;}
